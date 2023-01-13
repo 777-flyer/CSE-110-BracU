@@ -4,7 +4,7 @@ def individual_bonus_calculation (player_name,yearly_income,goal_scored,bonus):
         
         updated = goal_scored * (bonus/100 * yearly_income) + 10000
     
-    elif 20 >= goal_scored <= 30:
+    elif 20 <= goal_scored <= 30:
         
         updated = goal_scored * (bonus/100 * yearly_income) + 5000
     
