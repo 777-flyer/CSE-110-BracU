@@ -2,8 +2,10 @@
 
 a_list = []
 for i in range (5):
+  
   user = int(input("Sir,Please enter your desired number: "))
   a_list.append(user)
+  
   print("Numbers in the list: {}".format(a_list))
   
   
@@ -14,17 +16,23 @@ u = user = input()
 ns = new_string = ""
 
 for i in user:
+  
   if i != " ":
+    
     ns += i
+    
   else:
-    pass
+    
+    pass    #useless
 
 a_list = []
 bin = ""
 
 for i in ns:
+  
   if i != ",":
     bin += i
+    
   else:
     a_list.append(int(bin))
     bin = ""
@@ -34,21 +42,30 @@ a_list.append(int(bin))
 length = len(a_list)
 
 if length > 3:
+  
     print(a_list[2:length-2])
+    
 else:
+  
     print("Not possible")
     
 
 
 
 #task3
+
+
 a_list = []
+
 for i in range (5):
+  
   user = int(input())
   a_list.append(user)
+  
 rev_list = a_list[::-1]
 
 for j in rev_list:
+  
   print(j)
   
   
@@ -56,10 +73,14 @@ for j in rev_list:
 
 given_list = [3, 5, 1, 6]
 length = len(given_list)
+
 new_list = n = []
+
 for i in range (length):
+  
     given_list[i] = (given_list[i]**2)
     new_list.append(given_list[i])
+    
 print(new_list)
 
 
@@ -68,12 +89,19 @@ print(new_list)
 
 given_list = ["hey", "there", "", "what's", "", "up", "", "?"]
 length = len(given_list)
+
 new_list = nl = []
+
 for i in range(length):
+  
   if given_list[i] == "":
+    
     continue
+  
   else:
+    
     nl.append(given_list[i])
+    
 print("ORIGINAL LIST: {} ".format(given_list))
 print("MODIFIED LIST: {} ".format(nl))
 
@@ -82,20 +110,30 @@ print("MODIFIED LIST: {} ".format(nl))
 
 given_numbers = nums = "7, 13, 2, 10, 6, -11, 0"
 length = len(nums)
+
 substr = ""
-for i in range(length):
+
+for i in range (length):
+  
   if nums[i] != " ":
+    
       substr += nums[i]
+      
   else:
+    
       pass
 
 a_list = []
 ano_str = ""
+
 for j in substr:
+  
   if j != ",":
     ano_str += j
+    
   else:
     a_list.append(int(ano_str))
+    
     ano_str = "" 
 
 a_list.append(int(ano_str))
@@ -107,7 +145,9 @@ maxnum = 0
 maxind = 0
 
 for k in range(length):
+  
   if a_list[k] > maxnum:
+    
       maxnum = a_list[k]
       maxind = k
 
@@ -123,6 +163,7 @@ new_list = []
 
 for i in list_one[:(len(list_one)-1)]:
   new_list.append(i)
+  
 for j in list_two:
   new_list.append(j)
 
@@ -137,9 +178,12 @@ list_two = [10, 11, 12, -13, -14, -15, -16]
 new_list = []
 
 for i in list_one:
+  
   if i%2 == 0:
     new_list.append(i)
+    
 for j in list_two:
+  
   if j%2 == 0:
     new_list.append(j)
 
@@ -154,8 +198,10 @@ bin = ""
 a_list = []
 
 for i in user:
+  
   if i != " ":
     bin += i
+  
   else:
     a_list.append(int(bin))
     bin = ""
@@ -165,6 +211,7 @@ a_list.append(int(bin))
 mod_list = []
 
 for new in a_list:
+  
   if new%2 != 0:
     mod_list.append(new)
 
@@ -181,18 +228,23 @@ s = user = input("input: ")
 new_string =''
 
 for i in user:
+  
     if i != " ":
       new_string += i
+      
     else:
       pass
+
 new_string = new_string + ","
 
 a_list = []
 store = ""
 
 for j in new_string:
+  
     if j != ",":
       store += j
+      
     else:
       a_list.append(int(store))
       store = ""
@@ -200,7 +252,9 @@ for j in new_string:
 #a_list.append(int(store))
 
 final_list = []
+
 for k in a_list:
+  
   if k not in final_list:
     final_list.append(k)
 
@@ -217,7 +271,9 @@ list_two = [5, 6, 9, 8, 7]
 temp = False
 
 for i in list_one:
+  
     if i in list_two:
+      
         temp = True
         break
 
@@ -274,12 +330,14 @@ max_s = 0    #second largest
 s_indx = 0   #index second...
 
 for i in range(len(list_a)):
+  
     if list_a[i] > max_f:
         
         max_f = list_a[i]
         f_indx = i 
 
 for i in range(len(list_a)):
+  
     if list_a[i] > max_s and list_a[i] != max_f:
         
         max_s = list_a[i]
@@ -301,6 +359,7 @@ x = int(input('number of elements: '))
 list_a = []
 
 for i in range(x):
+  
     y = int(input(f'element_{i+1}: '))
     list_a.append(y)
 
@@ -311,12 +370,14 @@ mx_indx = 0
 min = 0 
 mn_indx = 0
 
-for i in range(len(list_a)): 
+for i in range(len(list_a)):
+   
     if list_a[i] > max:
+      
         max = list_a[i]
         mx_indx = i
 
-    if list_a[i] < min:
+    elif list_a[i] < min:
         min = list_a[i]
         mn_indx = i
 
@@ -330,11 +391,13 @@ list_1 = []
 list_2 = []
 
 x = int(input("number of elements in list_1: "))
+
 for i in range(x):
     p = input(f"list_1 element_{i+1}: ")
     list_1.append(p)
 
 y = int(input("number of elements in list_2: "))
+
 for i in range(y):
     q = input(f"list_2 element_{i+1}: ")   
     list_2.append(q)
@@ -345,6 +408,7 @@ print(list_2)
 new_list = [] # list with common elements from list_1 & list_2
 
 for i in list_2:
+  
     if i in list_1:
         new_list.append(i)
 

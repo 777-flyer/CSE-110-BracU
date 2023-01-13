@@ -4,7 +4,7 @@
 numone = int(input("Please enter the first number: "))
 numtwo = int(input("Please enter the second number: "))
 sum = numone + numtwo
-product = numone*numtwo
+product = numone * numtwo
 difference = numone - numtwo
 print("Sum={}".format(sum))
 print("Product={}".format(product))
@@ -88,10 +88,10 @@ else:
 #task---09
 
 var = int(input("Sir,Please do enter the number of seconds: "))
-hrs = var//3600
-min1 = var%3600
-min2 = min1//60
-second = min1%60
+hrs = var // 3600
+min1 = var % 3600
+min2 = min1 // 60
+second = min1 % 60
 print("Hours: {} Minutes: {} Seconds: {}".format(hrs,min2,second))
 
 #----------------------------------------------
@@ -145,21 +145,25 @@ else:
 #----------------------------------------------
 #task---13
 
-#task13
+
 var = int(input("Please enter the mark you got: "))
+
+
 if var>=0 and var<=100:
+  
   if var>=90 and var<=100:
     print("A")
   elif var>=80 and var<=89:
     print("B")
   elif var>=70 and var<=79:
-    print("C")  
+    print("C")                                # follow the indentations carefully
   elif var>=60 and var<=69: 
     print("D")
   elif var>=50 and var<=59: 
     print("E")
   else:
     print("F")
+    
 else:
   print("Please enter a valid input")
   
@@ -168,10 +172,13 @@ else:
 
 var = int(input("Enter the distance in meters: "))
 var2 = int(input("Enter the time in seconds: "))
+
 km = var/1000
 hr = var2/3600
 velo = km/hr
+
 print("{} km/h".format(velo))
+
 if velo<60:
   print("Too slow. Needs more changes.")
 elif velo>=60 and velo<=90:
