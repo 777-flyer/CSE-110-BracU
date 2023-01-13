@@ -1,18 +1,24 @@
 #TASK1
 
 
-print("(a)",end="")
+print("(a)", end = "")
 
 i = 30
 count = 0
-while count<=5:
+
+while count <= 5:
+  
     if count == 5:
-      i-=6
+      
+      i -= 6
       print(i, end = "")
+      
     else:
-       i-=6
+      
+       i -= 6
        print(i, end = ",")
-    count = count+1
+       
+    count = count + 1 #can be written as --- count += 1
 
 print("")
 
@@ -24,13 +30,19 @@ print("(b)", end = "")
 
 i = -15
 count = 0
-while count<=6:
+
+while count <= 6:
+  
   if count == 6:
+    
     i += 5
     print(i, end = "")
+    
   else:
+    
     i += 5
     print(i, end = ",")
+    
   count += 1
 
 print("")
@@ -43,13 +55,19 @@ print("(c)", end = "")
 
 i = 9
 count = 0
-while count<=5:
+
+while count <= 5:
+  
   if count == 5:
+    
     i += 9
     print(i, end = "")
+    
   else:
+    
     i += 9
     print(i, end = ",")
+    
   count = count+1
 
 print("")
@@ -58,16 +76,24 @@ print("")
 #TASK1.4
 
 
-print("(d)",end = "")
+print("(d)", end = "")
 
-start = 18
+start = 18 
+
 while start<64:
-  if start%2 == 0:
+  
+  if start % 2 == 0:
+    
     print(start, end = ",")
-  elif start%9 == 0 and 62<start<64:
+    
+  elif start % 9 == 0 and 62 < start < 64:
+    
     print(start*-1, end = "")
+    
   else:
+    
     print(start*-1, end = ",")
+    
   start += 9  
   
 #-------------------------------------------------------------------
@@ -76,7 +102,9 @@ while start<64:
 fav_car = input("Your favourite car: ")
 times = int(input("Enter the number of times: "))
 counter = 1
-while counter<=times:
+
+while counter <= times:
+  
     print(fav_car)
     counter += 1
 #-------------------------------------------------------------------
@@ -84,27 +112,39 @@ while counter<=times:
 
 var = 1
 sum = 0
-while var<=600:
-  if var%7 == 0 and var%9 == 0:
+while var <= 600:
+  
+  if var % 7 == 0 and var % 9 == 0:
+    
     sum += var
+    
   var += 1
+  
 print("The summation is:",sum) 
 #-------------------------------------------------------------------
 #task4
 
 start = 1
 sum = 0
-while start<=600:
-  if (start%7 == 0 and start%9 != 0) or (start%7 != 0 and start%9 == 0):
+
+while start <= 600:
+  
+  if (start % 7 == 0 and start % 9 != 0) or (start % 7 != 0 and start % 9 == 0):
+    
     sum += start
+    
   start += 1
+  
 print("Total summation is:",sum)
 #-------------------------------------------------------------------
 #task5 
 
 start = 10
-while start<50:
-  if start%2 != 0:
+
+while start < 50:
+  
+  if start % 2 != 0:
+    
     print(start, end = " ")
 
   start += 1
@@ -114,12 +154,19 @@ while start<50:
 y = int(input("Sir,Please enter your desired number: "))
 sum = 0
 counter = 1
-while counter<=y:
+
+while counter <= y:
+  
   if counter%2 == 0:
+    
     sum = sum - (counter*counter)
+    
   else:
+    
     sum = sum + (counter*counter)
+    
   counter = counter + 1
+  
 print(sum)   
 #-------------------------------------------------------------------
 #task7
@@ -130,14 +177,21 @@ total = 0
 
 times = 0
 
-while counter<=10:
+while counter <= 10:
+  
   user = int(input("Sir,Please enter your numbers: "))
-  if user%2 == 1:
+  
+  if user % 2 == 1:
+    
     total = total + user
     times = times + 1
+    
   counter += 1
+  
 average = total/times
-print("The total of the odd numbers is {} and their average is {}".format(total,average))    
+
+print("The total of the odd numbers is {} and their average is {}".format(total,average)) 
+   
 #-------------------------------------------------------------------
 #task8
 
@@ -145,9 +199,12 @@ user = int(input("Sir,Please enter a number: "))
 sum = 0
 counter = 0
 
-while counter<=user:
-  if counter%7 == 0:
+while counter <= user:
+  
+  if counter % 7 == 0:
+    
       sum = sum+counter
+      
   counter = counter+1
 
 print(sum)      
@@ -157,10 +214,11 @@ print(sum)
 sum = 0
 counter = 0
 
-while counter<5:
+while counter < 5:
+  
   user = int(input("Sir,Please enter your numbers: "))
   
-  sum = user+sum
+  sum = user + sum  #sum += user
 
   print(sum)
 
@@ -171,25 +229,33 @@ while counter<5:
 
 user = int(input("Sir,Please enter a number: "))
 
-while user>0:
-  remainder = user%10
-  if remainder//10 == 0:
+while user > 0:
+  
+  remainder = user % 10
+  
+  if remainder // 10 == 0:
+    
     print(remainder, end = "")
+    
   else:
+    
     print(remainder, end = ",")
-  user = user//10   
+    
+  user = user // 10   
 #-------------------------------------------------------------------
 #task11
 
 user = int(input("Sir,Please enter your desired number: "))
 tick = 0
 
-while user>0:
-  user = user//10
+while user > 0:
+  
+  user = user // 10
   tick += 1
+  
 print(tick)    
 #-------------------------------------------------------------------
-#task12 final
+#task12
 
 num1 = int(input())
 
@@ -197,18 +263,22 @@ num = num1
 
 counter = 0
 
-while num>0:
-  num = num//10
+while num > 0:
+  
+  num = num // 10
   counter += 1
 
 while counter > 0:
 
   if counter == 1:
+    
     print(num1//10**(counter-1))
+    
   else:
+    
     print(num1//10**(counter-1),end = ",")
 
-  num1 = num1%10**(counter-1)
+  num1 = num1 % 10**(counter-1)
   counter -= 1   
 #-------------------------------------------------------------------
 #task13
@@ -217,11 +287,15 @@ user = int(input("Sir,Please enter your desired number: "))
 divisor = 1
 counter = 0
 
-while divisor<=user:
-  if user%divisor == 0:
+while divisor <= user:
+  
+  if user % divisor == 0:
+    
     counter = counter + 1
     print(divisor)
+    
   divisor += 1
+  
 print("Total {} divisors.".format(counter))  
     
 #-------------------------------------------------------------------
@@ -231,14 +305,20 @@ var = int(input("Sir,Please enter your desired number: "))
 divisor = 1
 sum = 0
 
-while divisor<var:
-  if var%divisor == 0:
+while divisor < var:
+  
+  if var % divisor == 0:
+    
     sum = sum+divisor
+    
   divisor += 1
 
 if sum == var:
+  
   print("{} is a perfect number!".format(var))
+  
 else:
+  
   print("{} is not a perfect number!".format(var))   
 #-------------------------------------------------------------------
 #task15
@@ -247,33 +327,54 @@ user = int(input("Sir,Please enter a number: "))
 divisor = 0
 counter = 1
 
-while counter<=user:
+while counter <= user:
+  
      if user%counter == 0:
-          divisor+=1
-     counter+=1
-if user%1==0 and user%user==0 and divisor==2:
+       
+          divisor += 1
+          
+     counter += 1
+     
+if user % 1 == 0 and user % user == 0 and divisor == 2:
+  
     print("{} is a prime number".format(user))
+    
 else:
+  
    print("{} is not a prime number".format(user))
 #-------------------------------------------------------------------
 #task16
+#most imporant problem to learn
+
 
 no_of_inps = int(input("How many numbers you want to take: "))
+
 min = 0
 max = 0
 sum = 0
-for x in range(0, no_of_inps, 1):
-  num=int(input())
+
+for x in range (0, no_of_inps, 1):
+  
+  num = int(input())
+  
   if x == 0:
+    
     min = num
     max = num
     sum = num
+    
   else:
+    
     sum += num
+    
     if num >= max:
+      
       max = num
-    if num <= min:
+      
+    elif num <= min:
+      
       min = num
+      
 print(f'Maximum {max}')
 print(f'Minimum {min}')
 print(f'Average is {sum/no_of_inps}')    
@@ -282,9 +383,12 @@ print(f'Average is {sum/no_of_inps}')
 
 N = int(input("Sir,Please enter the size: "))
 
-for row in range(N):
+for row in range (N):
+  
     for column in range(N):
+      
         print("+",end="")
+        
     print()   
 #-------------------------------------------------------------------
 #task 18 
@@ -292,9 +396,12 @@ for row in range(N):
 M = int(input("enter the height: "))
 N = int(input("enter the length: "))
 
-for row in range(1,M+1):
-    for column in range(1,N+1):
+for row in range (1,M+1):
+  
+    for column in range (1,N+1):
+      
         print(column,end="")
+        
     print()   
 #-------------------------------------------------------------------
 #task 19 
@@ -302,9 +409,12 @@ for row in range(1,M+1):
 N = int(input("enter the height: "))
 sum = 0
 
-for row in range(1,N+1):
-    for column in range(1,row+1):
+for row in range (1,N+1):
+  
+    for column in range (1,row+1):
+      
         print(column,end="")
+        
     print()    
 #-------------------------------------------------------------------
 #---------------------TRACING------------------20-24
@@ -317,15 +427,18 @@ fibo1 = 0
 fibo2 = 1 
 new = 0 
 
-for i in range(N+1):
+for i in range (N+1):
     
-    if i == 0: 
+    if i == 0:
+       
         print(fibo1,end = " ")
 
     elif i == 1 :
+      
         print(fibo2,end = " ")
 
     else: 
+      
         new = fibo1 + fibo2 
 
         if new <= N: 
