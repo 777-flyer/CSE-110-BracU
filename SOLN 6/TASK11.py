@@ -19,4 +19,4 @@ for k in range (len(ns)):
             new_dict.update({f'{key}':value})
     value = 0
     
-print(new_dict)       
+print(new_dict)

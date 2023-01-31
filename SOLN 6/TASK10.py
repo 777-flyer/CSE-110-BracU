@@ -5,4 +5,4 @@ for keys,values in giv_dict.items():
     if giv_dict[keys] > max:
         max = values
         name = keys
-print("The highest selling book genre is '{}' and the max number is {}.".format(name,max))
+print("The highest selling book genre is '{}' and the number of books sold is {}.".format(name,max))
